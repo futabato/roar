@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: Frontend
+      dockerfile: 'Dockerfile'
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Frontend/app:/app
+    command: 'npm run serve'
+    networks:
+      - roar_net
+  backend:
+    build:
+      context: Backend
+      dockerfile: 'Dockerfile'
+    tty: true
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Backend/src:/src
+    networks:
+      - roar_net
+networks:
+  roar_net:
+    driver: bridge

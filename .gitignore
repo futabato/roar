@@ -1,0 +1,25 @@
+.DS_Store
+node_modules/
+/dist/
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+*.log*
+
+# Editor directories and files
+.idea
+.vscode
+.ipynb_checkpoints
+.mypy_cache
+__pycache__
+.pytest_cache
+venv
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
