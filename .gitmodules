@@ -1,0 +1,3 @@
+[submodule "Backend/src/YOLOX"]
+	path = Backend/src/YOLOX
+	url = git@github.com:Megvii-BaseDetection/YOLOX.git
